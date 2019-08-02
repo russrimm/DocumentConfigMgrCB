@@ -1232,7 +1232,7 @@ Write-Verbose "$(Get-Date):   Getting Site Information"
 $CMSites = Get-CMSite
 
 $CAS                    = $CMSites | Where-Object {$_.Type -eq 4}
-$ChildPrimarySites      = $CMSites | Where-Object {$_.Type -eq 3}
+$ChildPrimarySites      = $CMSites | Where-Object {$_.Type -eq 2}
 $StandAlonePrimarySite  = $CMSites | Where-Object {$_.Type -eq 2}
 $SecondarySites         = $CMSites | Where-Object {$_.Type -eq 1}
 
